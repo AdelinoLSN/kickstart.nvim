@@ -1,3 +1,5 @@
+require("custom.before");
+
 --[[
 
 =====================================================================
@@ -664,3 +666,4 @@ cmp.setup {
 
 require("custom.configs");
 require("custom.remaps");
+require("custom.after");

@@ -1,5 +1,3 @@
-vim.g.copilot_assume_mapped = true
-
 --[[
 
 =====================================================================
@@ -663,4 +661,6 @@ cmp.setup {
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Open the telescope prompt when pressing <C-p>
-vim.keymap.set('n', '<C-p>', require('telescope.builtin').find_files, { desc = 'Find Files' })
+
+require("custom.configs");
+require("custom.remaps");

@@ -17,6 +17,18 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
 })
+
+local telescope = require("telescope");
+telescope.setup({
+  pickers = {
+    find_files = {
+      hidden = true,
+    },
+    git_files = {
+      show_untracked = true,
+    },
+  },
+});

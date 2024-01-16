@@ -22,7 +22,9 @@ require("nvim-tree").setup({
 })
 
 local telescope = require("telescope");
+-- Create a telescope setup that ignores node_modules and .git but finds hidden files
 telescope.setup({
+  file_ignore_patterns = { "node_modules", ".git" },
   pickers = {
     find_files = {
       hidden = true,

@@ -13,3 +13,7 @@ vim.api.nvim_set_keymap("n", '<C-b>', ":Telescope file_browser<CR>", { noremap =
 vim.api.nvim_set_keymap("n", '<C-u>', ":undo<CR>", { noremap = true })
 -- Use Ctrl + R to redo
 vim.api.nvim_set_keymap("n", '<C-r>', ":redo<CR>", { noremap = true })
+
+-- Use Alt+Up/Down to move lines up and down
+vim.api.nvim_set_keymap("n", '<A-Up>', ":m .-2<CR>==", { noremap = true })
+vim.api.nvim_set_keymap("n", '<A-Down>', ":m .+1<CR>==", { noremap = true })
